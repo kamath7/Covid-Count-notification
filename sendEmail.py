@@ -14,7 +14,7 @@ def sendEmail():
     try:
         sender_address = os.getenv('EMAIL_ID')
         sender_pass = os.getenv('PASSWORD')
-        receiver_address = 'adithyakamath96@gmail.com'
+        receiver_address = os.getenv('RECEIVER_EMAIL_ID')
         #Setup the MIME
         message = MIMEMultipart()
         message['From'] = sender_address
