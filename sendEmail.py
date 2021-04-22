@@ -58,12 +58,28 @@ def sendEmail():
                     {2}
                 </th>
                 </tr>
+                 <tr>
+                    <td>
+                        Kasargod Count
+                    </td>
+                <th>
+                    {3}
+                </th>
+                </tr>
+                 <tr>
+                    <td>
+                        Mangalore Death Count
+                    </td>
+                <th>
+                    {4}
+                </th>
+                </tr>
                 <tr>
                     <td>
                         Karnataka Count
                     </td>
                 <th>
-                    {3}
+                    {5}
                 </th>
                 </tr>
                 <tr>
@@ -71,7 +87,7 @@ def sendEmail():
                         India Count
                     </td>
                 <th>
-                    {4}
+                    {6}
                 </th>
                 </tr>
             </table>
