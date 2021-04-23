@@ -7,6 +7,7 @@ def getData():
     karnatakaCount = apiData["data"]["karnatakaCount"]
     bangaloreCount = apiData["data"]["bangaloreCount"]
     mangaloreCount = apiData["data"]["mangaloreCount"]
+    kasargodCount = apiData["data"]["kasargodCount"]
     udupiCount = apiData["data"]["udupiCount"]
     indiaDailyConfirmed = apiData["data"]["indiaDailyConfirmed"]
-    return {'karnatakaCount': karnatakaCount, 'bangaloreCount': bangaloreCount, 'mangaloreCount': mangaloreCount, 'udupiCount': udupiCount, 'indiaDailyConfirmed': indiaDailyConfirmed}
+    return {'karnatakaCount': karnatakaCount, 'bangaloreCount': bangaloreCount, 'mangaloreCount': mangaloreCount,'kasargodCount':kasargodCount ,'udupiCount': udupiCount, 'indiaDailyConfirmed': indiaDailyConfirmed}
