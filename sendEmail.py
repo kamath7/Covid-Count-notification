@@ -2,7 +2,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from getData import getData
-import os 
+import os
 from dotenv import load_dotenv
 
 
@@ -10,12 +10,13 @@ load_dotenv()
 
 data = getData()
 
+
 def sendEmail():
     try:
         sender_address = os.getenv('EMAIL_ID')
         sender_pass = os.getenv('PASSWORD')
         receiver_address = os.getenv('RECEIVER_EMAIL_ID')
-        #Setup the MIME
+        # Setup the MIME
         message = MIMEMultipart()
         message['From'] = sender_address
         message['To'] = receiver_address
@@ -94,13 +95,13 @@ def sendEmail():
             <p>Stay safe and indoors.</p>
         </body>
         </html>
-        """.format(data['bangaloreCount'],data['mangaloreCount'],data['udupiCount'],data['karnatakaCount'],data['indiaDailyConfirmed'])
+        """.format(data['bangaloreCount'], data['mangaloreCount'], data['udupiCount'], data['kasargodCount'], data['mangaloreDeath'], data['karnatakaCount'], data['indiaDailyConfirmed'])
         # part1 = MIMEText(text, 'plain')
         # part2 = MIMEText(html, 'html')
         message.attach(MIMEText(htmlData, 'html'))
 
         session = smtplib.SMTP('smtp.gmail.com', 587)
-        session.connect("smtp.gmail.com",587)
+        session.connect("smtp.gmail.com", 587)
         session.ehlo()
         session.starttls()
         session.ehlo()
