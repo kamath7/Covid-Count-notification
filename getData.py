@@ -1,6 +1,4 @@
 import requests
-from requests import api
-
 
 def getData():
     r = requests.get('http://kams-covid-data.herokuapp.com/api/data')
