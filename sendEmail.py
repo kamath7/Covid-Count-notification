@@ -5,17 +5,13 @@ from getData import getData
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
-data = getData()
-
-
-def sendEmail():
+def sendEmail(email,data):
     try:
         sender_address = os.getenv('EMAIL_ID')
         sender_pass = os.getenv('PASSWORD')
-        receiver_address = os.getenv('RECEIVER_EMAIL_ID')
+        receiver_address = email
         # Setup the MIME
         message = MIMEMultipart()
         message['From'] = sender_address
