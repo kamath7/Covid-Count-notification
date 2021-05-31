@@ -17,6 +17,8 @@ def getData():
 
     mangaloreDeath = apiData["data"]["mangaloreDeath"] if type(
         int(apiData["data"]["mangaloreDeath"])) else 0
+    bangaloreUrbanDeath = apiData["data"]["bangaloreUrbanDeath"] if type(
+        int(apiData["data"]["bangaloreUrbanDeath"])) else 0
     shimogaDeath = apiData["data"]["shimogaDeath"] if type(
         int(apiData["data"]["shimogaDeath"])) else 0
     mysoreDeath = apiData["data"]["mysoreDeath"] if type(
@@ -29,4 +31,4 @@ def getData():
     keralaVaccinations = apiData["data"]["keralaVaccinations"]
 
     indiaDailyConfirmed = apiData["data"]["indiaDailyConfirmed"]
-    return {'wayanadCount': wayanadCount, 'shimogaCount': shimogaCount, 'mysoreCount': mysoreCount, 'shimogaDeath': shimogaDeath, 'mysoreDeath': mysoreDeath, 'kodaguDeath': kodaguDeath, 'karnatakaCount': karnatakaCount, 'bangaloreCount': bangaloreCount, 'mangaloreCount': mangaloreCount, 'kodaguCount': kodaguCount,  'udupiCount': udupiCount, 'kasargodCount': kasargodCount, 'mangaloreVaccinations': mangaloreVaccinations, 'karnatakaVaccinations': karnatakaVaccinations, 'keralaVaccinations': keralaVaccinations, 'mangaloreDeath': mangaloreDeath, 'indiaDailyConfirmed': indiaDailyConfirmed}
+    return {'wayanadCount': wayanadCount, 'shimogaCount': shimogaCount, 'mysoreCount': mysoreCount, 'shimogaDeath': shimogaDeath, 'mysoreDeath': mysoreDeath, 'kodaguDeath': kodaguDeath, 'karnatakaCount': karnatakaCount, 'bangaloreCount': bangaloreCount, 'mangaloreCount': mangaloreCount, 'kodaguCount': kodaguCount,  'udupiCount': udupiCount, 'kasargodCount': kasargodCount, 'mangaloreVaccinations': mangaloreVaccinations, 'karnatakaVaccinations': karnatakaVaccinations, 'keralaVaccinations': keralaVaccinations, 'mangaloreDeath': mangaloreDeath, 'indiaDailyConfirmed': indiaDailyConfirmed, 'bangaloreUrbanDeath': bangaloreUrbanDeath}
