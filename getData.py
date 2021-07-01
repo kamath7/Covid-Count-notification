@@ -14,7 +14,7 @@ def getData():
 
     kasargodCount = apiData["data"]["kasargodCount"]
     wayanadCount = apiData["data"]["wayanadCount"]
-
+    keralaCount = apiData["data"]["keralaCount"]
     mangaloreDeath = apiData["data"]["mangaloreDeath"] if type(
         int(apiData["data"]["mangaloreDeath"])) else 0
     bangaloreUrbanDeath = apiData["data"]["bangaloreUrbanDeath"] if type(
@@ -25,9 +25,9 @@ def getData():
         int(apiData["data"]["mysoreDeath"])) else 0
     kodaguDeath = 0 #apiData["data"]["kodaguDeath"] if type( #     int(apiData["data"]["kodaguDeath"])) else 0
 
-    mangaloreVaccinations = apiData["data"]["mangaloreVaccinations"]
-    karnatakaVaccinations = apiData["data"]["karnatakaVaccinations"]
-    keralaVaccinations = apiData["data"]["keralaVaccinations"]
+    # mangaloreVaccinations =  0 #apiData["data"]["mangaloreVaccinations"]
+    # karnatakaVaccinations =  0 #apiData["data"]["karnatakaVaccinations"]
+    # keralaVaccinations = 0 #apiData["data"]["keralaVaccinations"]
 
     indiaDailyConfirmed = apiData["data"]["indiaDailyConfirmed"]
-    return {'wayanadCount': wayanadCount, 'shimogaCount': shimogaCount, 'mysoreCount': mysoreCount, 'shimogaDeath': shimogaDeath, 'mysoreDeath': mysoreDeath, 'karnatakaCount': karnatakaCount, 'bangaloreCount': bangaloreCount, 'mangaloreCount': mangaloreCount, 'kodaguCount': kodaguCount,  'udupiCount': udupiCount, 'kasargodCount': kasargodCount, 'mangaloreVaccinations': mangaloreVaccinations, 'karnatakaVaccinations': karnatakaVaccinations, 'keralaVaccinations': keralaVaccinations, 'mangaloreDeath': mangaloreDeath, 'kodaguDeath': kodaguDeath,'indiaDailyConfirmed': indiaDailyConfirmed, 'bangaloreUrbanDeath': bangaloreUrbanDeath}
+    return {'wayanadCount': wayanadCount, 'shimogaCount': shimogaCount, 'mysoreCount': mysoreCount, 'shimogaDeath': shimogaDeath, 'mysoreDeath': mysoreDeath, 'karnatakaCount': karnatakaCount, 'bangaloreCount': bangaloreCount, 'mangaloreCount': mangaloreCount, 'kodaguCount': kodaguCount,  'udupiCount': udupiCount, 'kasargodCount': kasargodCount, 'mangaloreDeath': mangaloreDeath, 'kodaguDeath': kodaguDeath,'indiaDailyConfirmed': indiaDailyConfirmed, 'bangaloreUrbanDeath': bangaloreUrbanDeath, 'keralaCount': keralaCount}
